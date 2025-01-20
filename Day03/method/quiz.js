@@ -9,22 +9,10 @@ else if (
 ) {
   alert("반드시!, @, #, & 중 하나의 특수문자가 들어가야합니다");
 }
+else if (
+    id.slice(id.length-1, id.length) != id.slice(id.length-1, id.length).toUpperCase()){"마지막 알파벳이 대문자가 아닙니다"
+    }
+    else alert("아이디 완성")
+  
 
-//     ? alert("포함합니다")
-//     : alert("반드시!, @, #, & 중 하나의 특수문자가 들어가야합니다")
-// );
 
-// alert(
-//   id.slice(-1) == id.toUpperCase()
-//     ? alert("맞습니다")
-//     : alert("대문자여야합니다")
-// )(id == id.length(id >= 4 && id <= 16)) &&
-// (id.includes("@") ||
-//   id.includes("!") ||
-//   id.includes("#") ||
-//   id.includes("&")) &&
-// id.slice(-1) == id.toUpperCase()
-//   ? "아이디 완성"
-//   : "실패";
-// // alert(ID.includes("@") && ID.includes("it") ? alert("합격") : alert("불합격"));
-// alert(word == word.toUpperCase() ? word.toLowerCase() : word.toUpperCase());
