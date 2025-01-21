@@ -15,15 +15,15 @@ const calculator = {
   },
   add: function (x) {
     this.result = this.result + x;
-    this.history.push("더함");
+    this.history.push(this.result);
   },
   minus: function (x) {
     this.result = this.result - x;
-    this.history.push("뺌");
+    this.history.push(this.result);
   },
   multiply: function (x) {
     this.result = this.result * x;
-    this.history.push("곱셈");
+    this.history.push(this.result);
   },
   divide: function (x) {
     if (x == 0) {
@@ -31,16 +31,16 @@ const calculator = {
       this.history.push("에러");
     } else {
       this.result = this.result / x;
-      this.history.push("나눗셈");
+      this.history.push(this.result);
     }
   },
   square: function () {
     this.result = this.result ** 2;
-    this.history.push("제곱");
+    this.history.push(this.result);
   },
   clear: function () {
     this.result = 0;
-    this.history.push("0");
+    this.history.push(this.result);
   },
 };
 
