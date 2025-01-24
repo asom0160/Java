@@ -31,7 +31,7 @@ const getlotto = () => {
     const lotto = [
       ...new set(
         Array(6)
-          .fill(0)
+          .fill(1)
           .map((x) => String(getRandom(1, 45)))
       ),
     ];
